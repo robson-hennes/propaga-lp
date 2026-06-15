@@ -246,25 +246,22 @@ const socialLinks: SocialLink[] = [
       position: absolute;
       inset: 0;
       background-image:
-        radial-gradient(circle at 50% 18%, rgba(183, 226, 213, 0.52) 0 8%, rgba(91, 149, 143, 0.34) 18%, transparent 42%),
-        radial-gradient(circle at 50% 38%, rgba(255, 255, 255, 0.16) 0 10%, transparent 34%),
-        url('https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/mp8vzozxMEUbKZv9/propaga-health-YrDWWgZ50lS8p48e.png'),
+        linear-gradient(180deg, rgba(3, 6, 10, 0.12) 0%, rgba(3, 6, 10, 0.34) 42%, #0f1820 78%, #0f1820 100%),
+        url('/propaga-lp/assets/bg-mobile-propaga.jpg'),
         linear-gradient(160deg, #20343a 0%, #24444a 38%, #0f1820 78%);
-      background-position: center top, center 12svh, center top, center;
-      background-size: 140% 58svh, 110% 48svh, auto 64svh, cover;
+      background-position: center top, center top, center;
+      background-size: cover, cover, cover;
       background-repeat: no-repeat;
       background-attachment: scroll;
-      opacity: 0.82;
+      opacity: 1;
     }
 
     .hero__background::after {
-      background:
-        linear-gradient(180deg, rgba(6, 10, 14, 0.1) 0%, rgba(6, 10, 14, 0.48) 47%, #0f1820 68%, #0f1820 100%),
-        radial-gradient(circle at 50% 34%, rgba(255, 255, 255, 0.12), transparent 35%);
+      background: linear-gradient(180deg, rgba(6, 10, 14, 0) 0%, rgba(6, 10, 14, 0.18) 45%, #0f1820 76%, #0f1820 100%);
     }
 
     .hero__overlay {
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0.28) 0%, rgba(4, 9, 13, 0.22) 42%, #0f1820 72%);
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.06) 0%, rgba(4, 9, 13, 0.1) 46%, #0f1820 82%);
     }
 
     .hero__content {
