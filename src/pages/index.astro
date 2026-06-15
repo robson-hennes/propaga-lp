@@ -277,16 +277,19 @@ const socialLinks: SocialLink[] = [
 
     .social--main {
       order: 3;
-      width: 100%;
-      margin: 0;
-      padding: 12px 14px;
+      width: min(100%, 380px);
+      margin: 0 auto;
+      padding: 12px 16px;
       gap: 6px;
-      justify-content: space-between;
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      justify-content: center;
+      border: 0;
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(14px);
-      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.08)),
+        rgba(255, 255, 255, 0.12);
+      -webkit-backdrop-filter: saturate(180%) blur(28px);
+      backdrop-filter: saturate(180%) blur(28px);
+      box-shadow: 0 22px 55px rgba(0, 0, 0, 0.26);
     }
 
     .social__link {
@@ -294,25 +297,28 @@ const socialLinks: SocialLink[] = [
       height: 30px;
       font-size: 16px;
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.08);
     }
 
     .address,
     .contact {
-      width: 100%;
-      align-self: stretch;
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      border-radius: 26px;
-      background: rgba(9, 20, 27, 0.82);
-      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
-      backdrop-filter: blur(16px);
+      width: min(100%, 380px);
+      align-self: center;
+      border: 0;
+      border-radius: 28px;
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.075)),
+        rgba(11, 22, 31, 0.46);
+      -webkit-backdrop-filter: saturate(180%) blur(30px);
+      backdrop-filter: saturate(180%) blur(30px);
+      box-shadow: 0 28px 70px rgba(0, 0, 0, 0.32);
     }
 
     .address {
       order: 1;
       max-width: none;
-      padding: 22px 20px 20px;
-      text-align: left;
+      padding: 24px 22px 22px;
+      text-align: center;
     }
 
     .address h1 {
@@ -339,11 +345,12 @@ const socialLinks: SocialLink[] = [
 
     .contact {
       order: 2;
-      margin: 0;
-      padding: 16px 18px;
+      margin: 0 auto;
+      padding: 18px 20px;
       display: grid;
       gap: 8px;
-      justify-items: start;
+      justify-items: center;
+      text-align: center;
     }
 
     .contact a {
